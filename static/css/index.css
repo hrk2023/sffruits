@@ -1,0 +1,213 @@
+@font-face {
+  font-family: 'webfont';
+  src: url("../Webfont/Odachi.woff") format("woff");
+}
+
+.site-wrapper {
+  width: 100%;
+  margin: 0;
+  background-image: url(../illutrations/12.jpg);
+  background-repeat: no-repeat;
+  height: 80vh;
+  background-size: cover;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 8vh;
+  background-color: #424242;
+  margin: 0px;
+  z-index: 3;
+}
+
+.nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 40%;
+  z-index: 3;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: #ccc7c7;
+  text-decoration: none;
+  font-family: 'Poppins',sans-serif;
+  font-size: 14px;
+  letter-spacing: 1.2px;
+}
+
+.nav-links a:hover {
+  color: #ddbf30;
+}
+
+.burger {
+  padding: 15px;
+  display: none;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.burger div {
+  width: 25px;
+  height: 2px;
+  margin: 5px;
+  background-color: white;
+}
+
+.hero-text {
+  font-family: 'webfont';
+  font-size: 10vw;
+  font-weight: 200;
+  color: white;
+  position: absolute;
+  top: 15vh;
+  z-index: 2;
+}
+
+.row-design {
+  position: absolute;
+  top: 90vh;
+}
+
+.services {
+  position: absolute;
+  top: 150vh;
+}
+
+#about:hover, #services:hover {
+  color: tomato;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  position: absolute;
+  top: 200vh;
+  width: 100vw;
+  padding: 40px;
+}
+
+.img-social {
+  width: 80px;
+  height: 30px;
+  color: blue;
+  z-index: 5;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 1000px) {
+  .site-wrapper {
+    height: 90vh;
+  }
+  .row-design {
+    top: 95vh;
+    margin-top: 120px;
+    padding-bottom: 30px;
+  }
+  .ds3 {
+    border-left: 1px solid #dbdada;
+    padding-left: 30px;
+    text-align: left;
+  }
+  .ds2 {
+    border-left: 1px solid #dbdada;
+    padding-left: 30px;
+  }
+  .ds1 {
+    vertical-align: auto;
+  }
+  .services {
+    top: 155vh;
+    font-size: smaller;
+  }
+  #services {
+    vertical-align: middle;
+  }
+  .footer-wt-align {
+    text-align: right;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 50%;
+  }
+  .hero-text {
+    top: 25vh;
+    font-size: 10vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .site-wrapper {
+    overflow-x: hidden !important;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 50vh;
+    top: 8vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 60%;
+    background-color: #424242;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+    transition: -webkit-transform 0.5s ease-in;
+    transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+    z-index: 4;
+  }
+  .nav-links a:hover {
+    color: #ddbf30;
+  }
+  .hero-text {
+    top: 30vh;
+    font-size: 12vw;
+  }
+  .burger {
+    display: block;
+  }
+  .row-design {
+    text-align: center;
+  }
+  .ds1 {
+    padding: 20px;
+    border-bottom: 1px solid #dbdada;
+  }
+  #services {
+    border-bottom: 1px solid #dbdada;
+    padding-bottom: 20px;
+  }
+  .footer {
+    text-align: center;
+  }
+}
+
+.nav-active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+/*# sourceMappingURL=index.css.map */

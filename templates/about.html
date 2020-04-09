@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sadiya Fresh Fruits | Welcome</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="../static/css/about.css">
+</head>
+<body>
+    <section>
+        <img src='../static/illutrations/bg.jpg' class='img-responsive' id='bg'>
+        <img src='../static/illutrations/moon.png' class='img-responsive' id='moon'>
+        <img src='../static/illutrations/mountain.png' class='img-responsive' id='mountain'>
+        <img src='../static/illutrations/road.png' class='img-responsive' id='road'>
+        <h2 id='text'>ABOUT US</h2>
+    </section>
+    <div class='row dsgn-outter-msg-row'>
+        <div class='col-xs-offset-1 col-xs-10 col-md-offset-0 col-md-offset-1 col-md-6 dsgn-inner-msg-heading'>
+            WHO ARE WE?
+        </div>
+        <div class='col-xs-offset-1 col-xs-10 col-md-4 dsgn-inner-msg-body'>
+            Lorem Ipsum is simply dummy text of the printing
+            and typesetting industry. Lorem Ipsum has been
+            the industry's standard dummy text ever since
+            the 1500s, when an unknown printer took a galley
+            of type and scrambled it to make a type specimen
+            book. It has survived not only five centuries,
+            but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised 
+            in the 1960s with the release of Letraset sheets 
+            containing Lorem Ipsum passages, and more recently 
+            with desktop publishing software like Aldus PageMaker 
+            including versions of Lorem Ipsum.
+        </div>
+    </div>
+    <div id='particles-js'></div>
+    <script type='text/javascript'>
+        let bg = document.getElementById('bg');
+        let moon = document.getElementById('moon');
+        let mountain = document.getElementById('mountain');
+        let road = document.getElementById('road');
+        let text = document.getElementById('text');
+
+        window.addEventListener('scroll',function(){
+            var value = window.scrollY;
+            bg.style.top = value * 0.5 +'px';
+            moon.style.left = -value * 0.5 +'px';
+            mountain.style.top = -value * 0.15 +'px';
+            road.style.top = value * 0.15 +'px';
+            text.style.top = value * 1 +'px';
+        })
+
+    </script>
+    <!--Particle JS-->
+    <script type="text/javascript" src='../static/js/particles.min.js'></script>
+    <script type="text/javascript" src='../static/js/app.js'></script>
+</body>
+</html>
